@@ -32,7 +32,7 @@
 
 1. Создать Deployment приложения _frontend_ из образа nginx с количеством реплик 3 шт.
 
-создан манифест [deployment-front.yaml]
+создан манифест [deployment-front.yaml](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/deployment-front.yaml)
 
 ```
 apiVersion: apps/v1
@@ -61,7 +61,7 @@ spec:
 2. Создать Deployment приложения _backend_ из образа multitool. 
 
 
-создан манифест [deployment-back.yaml]
+создан манифест [deployment-back.yaml](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/deployment-back.yaml)
 
 ```
 apiVersion: apps/v1
@@ -94,7 +94,7 @@ spec:
 3. Добавить Service, которые обеспечат доступ к обоим приложениям внутри кластера. 
 
 
-[service-front.yaml]
+[service-front.yaml](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/service-front.yaml)
 
 ```
 apiVersion: v1
@@ -109,7 +109,7 @@ spec:
     app: frontend
 ```
 
-[service-back.yaml]
+[service-back.yaml](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/service-back.yaml)
 
 ```
 apiVersion: v1
@@ -187,13 +187,13 @@ deployment-back-7d779c456d-99zfc:/#
 
 5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
 
-[deployment-back]()
+[deployment-back](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/deployment-back.yaml)
 
-[deployment-front]()
+[deployment-front](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/deployment-front.yaml)
 
-[service-back]()
+[service-back](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/service-back.yaml)
 
-[service-front]()
+[service-front](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/service-front.yaml)
 
 
 ```
@@ -260,7 +260,7 @@ root@baranov:/home/baranovsa/kube-1.5#
 
 2. Создать Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался _frontend_ а при добавлении /api - _backend_.
 
-Создан [ingress.yaml]
+Создан [ingress.yaml](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/ingress.yaml)
 
 ```
 apiVersion: networking.k8s.io/v1
@@ -351,7 +351,7 @@ root@baranov:/home/baranovsa#
 4. Предоставить манифесты и скриншоты или вывод команды п.2.
 
 
-Манифест [ingress.yaml]()
+Манифест [ingress.yaml](https://github.com/12sergey12/12.5_kubernetes_Networking-in-K8S.part-2/blob/main/ingress.yaml)
 
 Вывод команд:
 
